@@ -245,7 +245,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         if (!TextUtils.isEmpty(milkNumberString)) {
             milkNumber = Integer.parseInt(milkNumberString);
         }
-        int totalMoney=25*coffeeNumber+25*teaNumber+25*milkNumber;
+        int totalMoney=25000*coffeeNumber+20000*teaNumber+30000*milkNumber;
         mTotalMoneyEditText.setText(""+totalMoney);
         // Check if this is supposed to be a new order
         // and check if all the fields in the editor are blank

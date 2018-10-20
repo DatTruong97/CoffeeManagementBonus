@@ -21,24 +21,37 @@
         <activity android:name=".dangnhapthanhcong" />
         <activity android:name=".ChonTang" />
         <activity android:name=".DangNhap" />
-        <activity android:name=".OrderActivity"
-            android:parentActivityName=".ChonTang" >
-        <!-- Parent activity meta-data to support 4.0 and lower -->
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".ChonTang"/>
+        <activity
+            android:name=".OrderActivity"
+            android:parentActivityName=".ChonTang">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChonTang" />
         </activity>
-        <activity android:name=".EditorActivity"
-            android:parentActivityName=".OrderActivity" >
+        <activity
+            android:name=".EditorActivity"
+            android:parentActivityName=".OrderActivity">
+
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".OrderActivity" />
         </activity>
+
         <provider
-            android:authorities="com.thangtruong19.coffeemanagement"
             android:name=".data.OrderProvider"
-            android:exported="false"/>
+            android:authorities="com.thangtruong19.coffeemanagement"
+            android:exported="false" />
+
+        <activity android:name=".DishActivity"
+            android:parentActivityName=".OrderActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChonTang"/></activity>
     </application>
 
 </manifest>
